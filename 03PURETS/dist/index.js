@@ -1,4 +1,10 @@
 "use strict";
-console.log("ts dfsdfidsfdsfs here still");
-console.log("ts is here still");
-console.log("ts is   amazing");
+class User {
+    constructor(email, name) {
+        this.city = "";
+        this.email = email;
+        this.name = name;
+    }
+}
+const hitesh = new User("h@h.com", "Hitesh");
+hitesh.city = "Delhi";
