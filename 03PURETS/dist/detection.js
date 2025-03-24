@@ -24,4 +24,37 @@ function printAll(strs) {
         }
     }
 }
-// Yes we dont get the errors but what about empty strıng case
+function isAdminAccount(account) {
+    if ("isAdmin" in account) {
+        return account.isAdmin;
+    }
+}
+//! instanceof : check for is this object isntanceof spesific class
+function logValue(x) {
+    if (x instanceof Date) {
+        console.log(x.toUTCString());
+    }
+    else {
+        console.log(x.toUpperCase());
+    }
+}
+// if u are returnnin type it can be usable. If u return boolean  can use
+function isFish(pet) {
+    return pet.swim !== undefined;
+}
+function getFood(pet) {
+    if (isFish(pet)) {
+        pet;
+        return "fish food";
+    }
+    else {
+        pet;
+        return "bird food";
+    }
+}
+function getTrueShape(shape) {
+    if (shape.kind === "circle") {
+        return Math.PI * shape.radius ** 2;
+    }
+    return shape.side * shape.side;
+}
